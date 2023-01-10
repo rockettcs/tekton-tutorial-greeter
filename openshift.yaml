@@ -6,7 +6,7 @@ metadata:
 spec:
   selector:
     app: chanu
-  replicas: 2
+  replicas: 1
   minReadySeconds: 5
   strategy:
     type: Rolling
@@ -21,7 +21,7 @@ spec:
       containers:
         - name: httpd
           image: >-
-            docker.io/rockettcs/chanu:latest
+            docker.io/rockettcs/chanu
           ports:
             - containerPort: 8080
 ---
