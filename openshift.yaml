@@ -21,7 +21,7 @@ spec:
       containers:
         - name: httpd
           image: >-
-            docker.io/rockettcs/chanu
+            docker.io/rockettcs/chanu:3
           ports:
             - containerPort: 8080
 ---
